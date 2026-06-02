@@ -6,7 +6,7 @@
 } 
 
 body { 
-    background-color: #afd4e9; 
+    background-color: #f7fafc; 
     color: #333; 
 } 
 
@@ -77,7 +77,7 @@ main {
 
 
 .card { 
-    background-color: rgb(71, 118, 150); 
+    background-color: rgb(244, 245, 247); 
     padding: 15px; 
     width: 220px;            /* Aumentei um pouco para caber melhor os títulos */
     border-radius: 8px;      /* Corrigido: colocado dentro do bloco certo */
