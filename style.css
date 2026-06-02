@@ -1,107 +1,139 @@
 * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
 } 
-margin: 0; 
-padding: 0; 
-box-sizing: border-box; 
-font-family: Arial, sans-serif; 
+
 body { 
-background-color: #f5f5f5; 
-color: #333; 
+    background-color: #f5f5f5; 
+    color: #333; 
 } 
-header { 
+
+
+    background-color: white; 
+    padding: 20px 8%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 } 
-background-color: white; 
-padding: 20px 8%; 
-display: flex; 
-align-items: center; 
-justify-content: space-between; 
-logo { 
-font-size: 24px; 
-font-weight: bold; 
-color: #2a7ae4; 
+
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #2a7ae4; 
 } 
+
 header input { 
+    width: 40%; 
+    padding: 10px; 
+    border-radius: 20px; 
+    border: 1px solid #ccc; 
 } 
-width: 40%; 
-padding: 10px; 
-border-radius: 20px; 
-border: 1px solid #ccc; 
+
 button { 
-background-color: #2a7ae4; 
-color: white; 
-border: none; 
-padding: 10px 18px; 
-cursor: pointer; 
+    background-color: #2a7ae4; 
+    color: white; 
+    border: none; 
+    padding: 10px 18px; 
+    cursor: pointer; 
+    border-radius: 4px; /* Opcional: deixa o botão levemente arredondado */
 } 
+
+
 .banner { 
-background-color: #2a7ae4; 
-color: white; 
-padding: 80px 8%; 
+    background-image: url("./scr/cuzin.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    padding: 80px 8%; 
 } 
+
 .banner h1 { 
-font-size: 42px; 
-margin-bottom: 10px; 
+    font-size: 42px; 
+    margin-bottom: 10px; 
 } 
-.banner { 
-background-image: url("./scr/cuzin.jpg"); 
-background-size: cover; 
-background-position: center; 
-background-repeat: no-repeat; 
-color: white; 
-padding: 80px 8%; 
-} 
+
+
 main { 
-padding: 40px 8%; 
+    padding: 40px 8%; 
 } 
+
 .titulo-categoria { 
-display: flex; 
-justify-content: space-between; 
-align-items: center; 
-margin-bottom: 25px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 25px; 
 } 
+
 .produtos { 
-display: flex; 
-gap: 20px; 
-flex-wrap: wrap; 
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center; /* Centraliza os produtos na tela */
 } 
+
+
 .card { 
-background-color: white; 
-padding: 15px; 
-width: 180px; 
+    background-color: white; 
+    padding: 15px; 
+    width: 220px;            /* Aumentei um pouco para caber melhor os títulos */
+    border-radius: 8px;      /* Corrigido: colocado dentro do bloco certo */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra leve para dar destaque */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o link "Comprar" fique alinhado embaixo */
 } 
-border-radius: 8px; 
+
+
 .card img { 
-width: 100%; 
-border-radius: 6px; 
+    width: 100%; 
+    height: 180px;           /* Define uma altura fixa idêntica para todas */
+    object-fit: contain;     /* Faz a imagem caber no espaço sem distorcer ou esticar */
+    background-color: #fafafa; /* Fundo cinza bem claro para destacar produtos de fundo branco */
+    border-radius: 6px; 
 } 
+
 .card h3 { 
-font-size: 16px; 
-margin-top: 10px; 
-} uyhn
+    font-size: 16px; 
+    margin-top: 10px; 
+    min-height: 38px;        /* Garante o mesmo espaço caso o título tenha 1 ou 2 linhas */
+} 
+
 .card p { 
-font-weight: bold; 
-margin: 8px 0; 
+    font-weight: bold; 
+    margin: 8px 0; 
+    color: #333;
 } 
+
 .card a { 
-color: #2a7ae4; 
-font-weight: bold; 
-text-decoration: none; 
+    color: #2a7ae4; 
+    font-weight: bold; 
+    text-decoration: none; 
+    margin-top: auto;        /* Empurra o botão sempre para o rodapé do card */
 } 
+
+
 footer { 
-background-color: #eaf2fd; 
-padding: 40px 8%; 
-display: flex; 
-justify-content: space-between; 
-gap: 30px; 
+    background-color: #eaf2fd; 
+    padding: 40px 8%; 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 30px; 
 } 
+
 footer form { 
-display: flex; 
-flex-direction: column; 
-width: 300px; 
-gap: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    width: 300px; 
+    gap: 10px; 
 } 
+
 footer input, 
 footer textarea { 
-padding: 10px; 
-} 
-border: none; 
+    padding: 10px; 
+    border: 1px solid #ccc;  /* Corrigido: adicionada borda padrão nos inputs */
+    border-radius: 4px;
+}
