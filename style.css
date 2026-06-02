@@ -6,7 +6,7 @@
 } 
 
 body { 
-    background-color: #0578bb; 
+    background-color: #afd4e9; 
     color: #333; 
 } 
 
@@ -77,11 +77,11 @@ main {
 
 
 .card { 
-    background-color: white; 
+    background-color: rgb(71, 118, 150); 
     padding: 15px; 
     width: 220px;            /* Aumentei um pouco para caber melhor os títulos */
     border-radius: 8px;      /* Corrigido: colocado dentro do bloco certo */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra leve para dar destaque */
+    box-shadow: 0 4px 6px rgba(131, 156, 236, 0.05); /* Sombra leve para dar destaque */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Garante que o link "Comprar" fique alinhado embaixo */
